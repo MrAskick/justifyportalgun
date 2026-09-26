@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "justify_portal_gun",
+  "version": "${version}",
+  "name": "Justify Portal Gun",
+  "description": "Portal guns, seamless portals and Companion Cubes. Requires matching Justify API.",
+  "authors": [
+    "Mr.Askick"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "icon": "assets/justifylasers/icon.png",
+  "contact": {
+    "sources": "https://github.com/MrAskick/justifyportalgun",
+    "issues": "https://github.com/MrAskick/justifyportalgun/issues"
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "justify_api": "=${version}"
+  }
+}

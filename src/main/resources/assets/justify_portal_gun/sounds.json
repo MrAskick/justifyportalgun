@@ -1,0 +1,244 @@
+{
+  "portal_enter": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_enter_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_enter_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_enter_03",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_enter"
+  },
+  "portal_exit": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_exit_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_exit_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_exit"
+  },
+  "portal_fizzle": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_fizzle_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_fizzle_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_fizzle"
+  },
+  "portal_invalid_surface": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_invalid_surface_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_invalid_surface_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_invalid_surface_03",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:portal/portal_invalid_surface_04",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_invalid_surface"
+  },
+  "portal_open_blue": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_open_blue_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_open_blue"
+  },
+  "portal_open_red": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/portal_open_red_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_open_red"
+  },
+  "wpn_portal_ambient_lp": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:portal/wpn_portal_ambient_lp_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.wpn_portal_ambient_lp"
+  },
+  "object_use_failure": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/object_use_failure_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.object_use_failure"
+  },
+  "object_use_lp_loop": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/object_use_lp_loop",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.object_use_lp_loop"
+  },
+  "object_use_lp_start": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/object_use_lp_start",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.object_use_lp_start"
+  },
+  "object_use_stop": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/object_use_stop_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.object_use_stop"
+  },
+  "portal_invalid_surface_swt": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/portal_invalid_surface_swt_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.portal_invalid_surface_swt"
+  },
+  "wpn_portalgun_activation": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/wpn_portalgun_activation_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.wpn_portalgun_activation"
+  },
+  "wpn_portal_fizzler_shimmy": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_fizzler_shimmy_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.wpn_portal_fizzler_shimmy"
+  },
+  "wpn_portal_gun_fire_blue": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_blue_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_blue_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_blue_03",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.wpn_portal_gun_fire_blue"
+  },
+  "wpn_portal_gun_fire_red": {
+    "sounds": [
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_red_01",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_red_02",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      },
+      {
+        "name": "justify_portal_gun:gun/wpn_portal_gun_fire_red_03",
+        "pitch": 1.0,
+        "weight": 1,
+        "preload": true
+      }
+    ],
+    "subtitle": "subtitles.justify_portal_gun.wpn_portal_gun_fire_red"
+  }
+}

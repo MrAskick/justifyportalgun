@@ -1,0 +1,22 @@
+modLoader="lowcodefml"
+loaderVersion="[1,)"
+license="MIT"
+[[mods]]
+modId="justify_portal_gun"
+version="${version}"
+displayName="Justify Portal Gun"
+logoFile="assets/justifylasers/icon.png"
+description="Portal guns, seamless portals and Companion Cubes. Requires matching Justify API."
+displayURL="https://github.com/MrAskick/justifyportalgun"
+[[dependencies.justify_portal_gun]]
+modId="justify_api"
+type="required"
+versionRange="[${version}]"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.justify_portal_gun]]
+modId="minecraft"
+type="required"
+versionRange="[${minecraft_version}]"
+ordering="NONE"
+side="BOTH"

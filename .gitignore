@@ -1,0 +1,17 @@
+.gradle/
+build/
+run/
+.idea/
+*.iml
+ref/
+references/
+tools/
+publish/
+backups/
+logs/
+.env
+.env.*
+*.hprof
+*.jfr
+Thumbs.db
+.DS_Store

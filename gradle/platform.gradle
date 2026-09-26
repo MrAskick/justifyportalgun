@@ -1,0 +1,48 @@
+apply plugin: 'dev.architectury.loom'
+def fabric=project.property('loom.platform')=='fabric'
+def modern=minecraft_version=='1.21.1'
+def loader=project.property('loom.platform')
+base.archivesName="JustifyPortalGun-${project.name}"
+repositories {
+    maven { url='https://maven.fabricmc.net/' }
+    maven { url='https://maven.architectury.dev/' }
+    maven { url='https://maven.neoforged.net/releases/' }
+    mavenCentral()
+}
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    if(loader=='neoforge') {
+        mappings loom.layered {
+            it.mappings("net.fabricmc:yarn:${yarn_mappings}:v2")
+            it.mappings('dev.architectury:yarn-mappings-patch-neoforge:1.21+build.4')
+        }
+        neoForge "net.neoforged:neoforge:${neoforge_version}"
+    } else {
+        mappings "net.fabricmc:yarn:${yarn_mappings}:v2"
+        if(fabric) {
+            modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+            modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+            modCompileOnly "teamreborn:energy:${modern?'4.1.0':'3.0.0'}"
+        } else forge "${project.hasProperty('legacy_neoforge')?'net.neoforged':'net.minecraftforge'}:forge:${minecraft_version}-${forge_version}"
+    }
+    // Named development classes, built from the adjacent API sources before javac runs.
+    def apiBuild=gradle.includedBuild('justifyApiSources')
+    compileOnly files(new File(apiBuild.projectDir,"platforms/${project.name}/build/development/api.jar"))
+            .builtBy(apiBuild.task(":${project.name}:prepareApiDevelopment"))
+}
+sourceSets.main {
+    java.srcDirs=[rootProject.file('src/main/java'),rootProject.file('src/client/java'),
+                  rootProject.file("platforms/${findProperty('platform_sources')?:project.name}/src/client/java")]
+    resources.srcDirs=[rootProject.file('src/main/resources')]
+}
+apply from: rootProject.file('gradle/resources.gradle')
+processResources {
+    def values=[version:project.version,minecraft_version:minecraft_version,loader_version:loader_version,pack_format:modern?34:15]
+    inputs.properties values; filteringCharset='UTF-8'
+    filesMatching(['fabric.mod.json','META-INF/mods.toml','META-INF/neoforge.mods.toml','pack.mcmeta']) { expand values }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8'; options.release=modern?21:17 }
+java { withSourcesJar() }
+tasks.withType(Jar).configureEach { preserveFileTimestamps=false; reproducibleFileOrder=true }
+jar { from(rootProject.file('LICENSE.txt')) }
+sourcesJar { from(rootProject.file('LICENSE.txt')) }
