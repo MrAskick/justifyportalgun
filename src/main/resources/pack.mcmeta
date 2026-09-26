@@ -1,1 +1,6 @@
-{"pack":{"pack_format":${pack_format},"description":"Justify Portal Gun resources"}}
+{
+  "pack": {
+    "pack_format": ${pack_format},
+    "description": "Justify Portal Gun: portal guns, seamless portals and Companion Cubes."
+  }
+}

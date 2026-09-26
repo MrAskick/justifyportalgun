@@ -5,7 +5,7 @@ license="MIT"
 modId="justify_portal_gun"
 version="${version}"
 displayName="Justify Portal Gun"
-logoFile="assets/justifylasers/icon.png"
+logoFile="assets/justify_portal_gun/icon.png"
 description="Portal guns, seamless portals and Companion Cubes. Requires matching Justify API."
 displayURL="https://github.com/MrAskick/justifyportalgun"
 [[dependencies.justify_portal_gun]]

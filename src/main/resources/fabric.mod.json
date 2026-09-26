@@ -9,7 +9,7 @@
   ],
   "license": "MIT",
   "environment": "*",
-  "icon": "assets/justifylasers/icon.png",
+  "icon": "assets/justify_portal_gun/icon.png",
   "contact": {
     "sources": "https://github.com/MrAskick/justifyportalgun",
     "issues": "https://github.com/MrAskick/justifyportalgun/issues"
